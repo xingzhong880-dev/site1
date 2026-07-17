@@ -91,12 +91,6 @@
   main .video .container::before, main .video .container::after {
     height: 1px;
   }
-  main .video .container::before {
-    margin-right: 100px;
-  }
-  main .video .container::after {
-    margin-left: 100px;
-  }
   main .video .top .case .case-img {
     display: grid;
     grid-template-columns: 1fr;
@@ -107,12 +101,6 @@
   }
   main .bottom .container::before, main .bottom .container::after {
     height: 1px;
-  }
-  main .bottom .container::before {
-    margin-right: 100px;
-  }
-  main .bottom .container::after {
-    margin-left: 100px;
   }
   main .bottom .bottom1 .flow2 {
     display: block;

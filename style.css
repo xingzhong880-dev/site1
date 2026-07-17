@@ -91,7 +91,7 @@ main .video {
 main .video .container {
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: space-between;
   font-size: 18px;
   color: white;
   margin-bottom: 70px;
@@ -102,11 +102,10 @@ main .video .container::before, main .video .container::after {
   height: 2px;
   background: white;
 }
-main .video .container::before {
-  margin-right: 50px;
-}
-main .video .container::after {
-  margin-left: 50px;
+main .video .container h2 {
+  padding: 0 20px;
+  min-width: 250px;
+  text-align: center;
 }
 main .video .video1 {
   position: fixed;
@@ -195,7 +194,7 @@ main .video .top .feature .btn-group {
 main .video .top .feature .btn-group .icon {
   color: white;
   text-align: center;
-  font-family: 14px;
+  font-size: 14px;
   width: 30%;
 }
 main .video .top .feature .btn-group .icon .btn {
@@ -238,6 +237,9 @@ main .video .top .feature .btn-group .icon .title {
   margin-bottom: 5px;
 }
 main .bottom {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
   width: 100%;
   height: 100%;
   background-color: white;
@@ -246,7 +248,7 @@ main .bottom {
 main .bottom .container {
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: space-between;
   font-size: 18px;
   color: #121212;
   margin-bottom: 70px;
@@ -257,11 +259,10 @@ main .bottom .container::before, main .bottom .container::after {
   height: 2px;
   background: #121212;
 }
-main .bottom .container::before {
-  margin-right: 50px;
-}
-main .bottom .container::after {
-  margin-left: 50px;
+main .bottom .container h2 {
+  padding: 0 20px;
+  min-width: 250px;
+  text-align: center;
 }
 main .bottom .bottom1 {
   max-width: 900px;
@@ -384,6 +385,9 @@ main .bottom .bottom2 .inquiry2 .icon-btn {
   color: #121212;
   padding: 16px 20px;
   cursor: pointer;
+}
+main .bottom .bottom2 .inquiry2 .icon-btn:hover {
+  border-width: 3px;
 }
 main .bottom .bottom2 .inquiry2 .icon-btn img {
   width: 60px;

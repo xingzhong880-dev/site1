@@ -90,12 +90,6 @@
                 &::after {
                     height: 1px;
                 }
-                &::before {
-                    margin-right: 100px;
-                }
-                &::after {
-                    margin-left: 100px;
-                }
             }
             .top{
                 .case{
@@ -113,12 +107,6 @@
                 &::before,
                 &::after {
                     height: 1px;
-                }
-                &::before {
-                    margin-right: 100px;
-                }
-                &::after {
-                    margin-left: 100px;
                 }
             }
             .bottom1{

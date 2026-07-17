@@ -14,14 +14,6 @@
         height: 2px;
         background: white;
     }
-
-    &::before {
-        margin-right: 50px;
-    }
-
-    &::after {
-        margin-left: 50px;
-    }
 }
 @mixin card2{
     &::before,
@@ -30,14 +22,6 @@
         flex: 1;
         height: 2px;
         background: #121212;
-    }
-
-    &::before {
-        margin-right: 50px;
-    }
-
-    &::after {
-        margin-left: 50px;
     }
 }
 .sidebar {
@@ -122,11 +106,16 @@ main{
         .container{
             display: flex;
             align-items: center;
-            text-align: center;
+            justify-content: space-between;
             font-size: 18px;
             color: white;
             margin-bottom: 70px;
             @include card1;
+            h2{
+                padding: 0 20px;
+                min-width: 250px;
+                text-align:center;
+            }
         }
         .video1{
             position: fixed;
@@ -223,7 +212,7 @@ main{
                     .icon{
                         color: white;
                         text-align:center;
-                        font-family: 14px;
+                        font-size: 14px;
                         width: 30%;
                         .btn{
                             aspect-ratio: 1 / 1;
@@ -274,6 +263,9 @@ main{
         }
     }
     .bottom{
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
         width: 100%;
         height: 100%;
         background-color: white;
@@ -281,11 +273,16 @@ main{
         .container{
             display: flex;
             align-items: center;
-            text-align: center;
+            justify-content: space-between;
             font-size: 18px;
             color: #121212;
             margin-bottom: 70px;
             @include card2;
+            h2{
+                padding: 0 20px;
+                min-width: 250px;
+                text-align:center;
+            }
         }
         .bottom1{
             max-width: 900px;
@@ -407,7 +404,9 @@ main{
                     color: #121212;
                     padding: 16px 20px;
                     cursor: pointer;
-
+                    &:hover{
+                        border-width: 3px;
+                    }
                     img{
                         width: 60px;
                         height: 60px;
